@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/mainStyle.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main class="pig__game">
+      <div class="app__container">
+        <div class="player__one active">
+          <div class="player__totalScore player__oneTotalScore">
+            <h2>player 1</h2>
+            <progress value="0" max="100"></progress>
+            <h3>0</h3>
+          </div>
+          <div class="player__currentScore player__oneCurrentScore">
+            <h4>current</h4>
+            <h5>0</h5>
+          </div>
+        </div>
+        <div class="game__options">
+          <button class="game__optionsButton new__gameButton">
+            💫 new game
+          </button>
+          <button class="game__optionsButton roll__button">🎲 roll</button>
+          <button class="game__optionsButton hold__button">👆 hold</button>
+          <figure class="dice__number">
+            <img class="hidden" src="./images/dice-1.png" alt="" srcset="" />
+          </figure>
+        </div>
+        <div class="player__two">
+          <div class="player__totalScore player__twoTotalScore">
+            <h2>com</h2>
+            <progress value="0" max="100"></progress>
+            <h3>0</h3>
+          </div>
+          <div class="player__currentScore player__twoCurrentScore">
+            <h4>current</h4>
+            <h5>0</h5>
+          </div>
+        </div>
+        <div class="winnig__message hidden">
+          <button class="close__winningMessage">&times;</button>
+          <h2></h2>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
